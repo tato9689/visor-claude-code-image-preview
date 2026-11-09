@@ -58,8 +58,11 @@ exports.run = async function () {
   await ext.activate();
   await vscode.commands.executeCommand("workbench.action.closeAuxiliaryBar");
   await vscode.commands.executeCommand("workbench.view.extension.visor");
-  await sleep(2500);
   const state = () => vscode.commands.executeCommand("visor._state");
+  const t0 = Date.now();
+  for (let i = 0; i < 150 && (await state()).items.length < 2; i++) await sleep(100);
+  console.log(`  histórico cargado en ${Date.now() - t0} ms`);
+  await sleep(500);
   check((await state()).items.length === 2, "carga el histórico (2 elementos)");
   {
     const { language, sample } = await state();
@@ -107,7 +110,8 @@ exports.run = async function () {
 
   // «Cambiar»: escribe la ruta en la terminal de Claude, sin Enter.
   await vscode.commands.executeCommand("visor.askChange", { path: sprite });
-  await sleep(500);
+  // La terminal simulada solo recibe texto cuando VS Code la ha abierto; con la máquina cargada tarda más de 500 ms.
+  for (let i = 0; i < 100 && typed === ""; i++) await sleep(100);
   check(typed === `'${sprite}' `, `escribe la ruta entre comillas simples en la terminal de Claude: ${JSON.stringify(typed)}`);
 
   // Una ruta con salto de línea no se escribe nunca (sería como pulsar Enter).

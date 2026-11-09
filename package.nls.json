@@ -7,5 +7,6 @@
   "command._state.title": "Internal state (tests)",
   "command._ui.title": "Open viewer (tests)",
   "view.panel.name": "Previews",
-  "config.maxItems": "How many previews to load from the session history when the panel opens."
+  "config.maxItems": "How many previews to load from the session history when the panel opens.",
+  "config.askForReview": "Ask once, after a week of real use, for a rating. Turn off to never be asked."
 }

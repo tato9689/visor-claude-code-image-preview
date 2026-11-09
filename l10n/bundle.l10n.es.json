@@ -79,5 +79,8 @@
   "1 local file not loaded": "1 archivo local sin cargar",
   "{0} local files not loaded": "{0} archivos locales sin cargar",
   "Outside the project, missing, too big or not an allowed type:": "Fuera del proyecto, inexistente, demasiado grande o de un tipo no permitido:",
-  "VS Code can't show this file (unsupported format or damaged file)": "VS Code no puede mostrar este archivo (formato no compatible o archivo dañado)"
+  "VS Code can't show this file (unsupported format or damaged file)": "VS Code no puede mostrar este archivo (formato no compatible o archivo dañado)",
+  "Rate Visor": "Valorar Visor",
+  "No thanks": "No, gracias",
+  "Enjoying Visor? A quick rating helps other people find it. This is the only time it asks.": "¿Te está sirviendo Visor? Una valoración rápida ayuda a que otras personas la encuentren. Es la única vez que lo pregunta."
 }

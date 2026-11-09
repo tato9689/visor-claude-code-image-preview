@@ -9,6 +9,7 @@ import { JsonlTailer } from "./tailer";
 import { findSessions, projectsRoot, subagentFiles } from "./sessions";
 import { VersionStore } from "./versions";
 import { inlineLocalAssets } from "./htmlAssets";
+import { reviewUrl, shouldAskForReview } from "./review";
 
 const t = vscode.l10n.t;
 
@@ -74,6 +75,25 @@ class PreviewProvider implements vscode.WebviewViewProvider {
   constructor(private ctx: vscode.ExtensionContext) {
     this.versions = new VersionStore(vscode.Uri.joinPath(ctx.globalStorageUri, "versions").fsPath);
     this.versions.prune(SNAPSHOT_DAYS);
+    if (ctx.globalState.get<number>("visor.firstSeen") === undefined) ctx.globalState.update("visor.firstSeen", Date.now());
+  }
+
+  /** Una sola petición de valoración, a quien ya la usa de verdad. Se marca como hecha ANTES de enseñarla: aunque la cierre sin mirar, no vuelve. */
+  private countForReview(n: number) {
+    if (n === 0) return;
+    const g = this.ctx.globalState;
+    const liveCount = (g.get<number>("visor.liveCount") ?? 0) + n;
+    g.update("visor.liveCount", liveCount);
+    if (!vscode.workspace.getConfiguration("visor").get<boolean>("askForReview", true)) return;
+    const state = { firstSeen: g.get<number>("visor.firstSeen"), liveCount, asked: g.get<boolean>("visor.reviewAsked") === true };
+    if (!shouldAskForReview(state, Date.now())) return;
+    g.update("visor.reviewAsked", true);
+    const rate = t("Rate Visor");
+    vscode.window
+      .showInformationMessage(t("Enjoying Visor? A quick rating helps other people find it. This is the only time it asks."), rate, t("No thanks"))
+      .then((choice) => {
+        if (choice === rate) vscode.env.openExternal(vscode.Uri.parse(reviewUrl(vscode.env.appName)));
+      });
   }
 
   resolveWebviewView(view: vscode.WebviewView) {
@@ -244,6 +264,7 @@ class PreviewProvider implements vscode.WebviewViewProvider {
       this.post({ type: "add", item: this.safeView(e) });
     }
     if (this.items.length > MAX_ITEMS) this.items.splice(0, this.items.length - MAX_ITEMS);
+    this.countForReview(events.length);
   }
 
   /** toView sin que un archivo raro (borrado a medias, ilegible) se lleve por delante el resto del lote. */

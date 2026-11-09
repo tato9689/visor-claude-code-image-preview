@@ -7,5 +7,6 @@
   "command._state.title": "Estado interno (pruebas)",
   "command._ui.title": "Abrir visor (pruebas)",
   "view.panel.name": "Previsualizaciones",
-  "config.maxItems": "Cuántas previsualizaciones cargar del historial de la sesión al abrir el panel."
+  "config.maxItems": "Cuántas previsualizaciones cargar del historial de la sesión al abrir el panel.",
+  "config.askForReview": "Pedir una sola vez, tras una semana de uso real, una valoración. Desactívalo para que no pregunte nunca."
 }
