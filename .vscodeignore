@@ -9,3 +9,4 @@ vitest.config.*
 dist/*.map
 docs/**
 media/marketplace-icon.svg
+.github/**
