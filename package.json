@@ -7,11 +7,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tato9689/visor-for-claude-code"
+    "url": "https://github.com/tato9689/visor-claude-code-image-preview"
   },
   "homepage": "https://tato9689.com/proyectos-ia/visor/",
   "bugs": {
-    "url": "https://github.com/tato9689/visor-for-claude-code/issues"
+    "url": "https://github.com/tato9689/visor-claude-code-image-preview/issues"
   },
   "engines": {
     "vscode": "^1.90.0"

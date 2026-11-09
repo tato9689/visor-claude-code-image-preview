@@ -5,7 +5,7 @@
 [![VS Code Marketplace](https://vsmarketplacebadges.dev/version-short/tato9689.visor-for-claude-code.svg)](https://marketplace.visualstudio.com/items?itemName=tato9689.visor-for-claude-code)
 [![Installs](https://vsmarketplacebadges.dev/installs-short/tato9689.visor-for-claude-code.svg)](https://marketplace.visualstudio.com/items?itemName=tato9689.visor-for-claude-code)
 [![Open VSX](https://img.shields.io/open-vsx/v/tato9689/visor-for-claude-code?label=Open%20VSX)](https://open-vsx.org/extension/tato9689/visor-for-claude-code)
-[![License: MIT](https://img.shields.io/github/license/tato9689/visor-for-claude-code)](LICENSE)
+[![License: MIT](https://img.shields.io/github/license/tato9689/visor-claude-code-image-preview)](LICENSE)
 
 **Install:** `code --install-extension tato9689.visor-for-claude-code` · [Marketplace](https://marketplace.visualstudio.com/items?itemName=tato9689.visor-for-claude-code) · [Open VSX](https://open-vsx.org/extension/tato9689/visor-for-claude-code)
 
@@ -42,13 +42,13 @@ If the panel stays empty, open **Output → Visor**: it says which session it is
 
 - **VS Code Marketplace:** search for *Visor* in the Extensions view, or open [the listing](https://marketplace.visualstudio.com/items?itemName=tato9689.visor-for-claude-code).
 - **Open VSX** (VSCodium, Cursor, Windsurf…): [open-vsx.org/extension/tato9689/visor-for-claude-code](https://open-vsx.org/extension/tato9689/visor-for-claude-code).
-- **Manual:** download the `.vsix` from [Releases](https://github.com/tato9689/visor-for-claude-code/releases), then Extensions → `…` → **Install from VSIX…**.
+- **Manual:** download the `.vsix` from [Releases](https://github.com/tato9689/visor-claude-code-image-preview/releases), then Extensions → `…` → **Install from VSIX…**.
 
 When Claude Code runs on a remote host over Remote-SSH, install it there (VS Code offers *Install in SSH: …*).
 
 ## Status
 
-Early version (0.2.x). Feedback and issues welcome. If Visor is useful to you, a rating on the [Marketplace](https://marketplace.visualstudio.com/items?itemName=tato9689.visor-for-claude-code&ssr=false#review-details) or [Open VSX](https://open-vsx.org/extension/tato9689/visor-for-claude-code/reviews) (or a star on GitHub) is the best way to help other people find it. After a week of real use the extension asks once; set `visor.askForReview` to `false` to turn that off. Ideas for what Visor should do next: `…` menu in the panel → **Suggest an improvement**, or [open an idea on GitHub](https://github.com/tato9689/visor-for-claude-code/issues/new?template=idea.yml).
+Early version (0.2.x). Feedback and issues welcome. If Visor is useful to you, a rating on the [Marketplace](https://marketplace.visualstudio.com/items?itemName=tato9689.visor-for-claude-code&ssr=false#review-details) or [Open VSX](https://open-vsx.org/extension/tato9689/visor-for-claude-code/reviews) (or a star on GitHub) is the best way to help other people find it. After a week of real use the extension asks once; set `visor.askForReview` to `false` to turn that off. Ideas for what Visor should do next: `…` menu in the panel → **Suggest an improvement**, or [open an idea on GitHub](https://github.com/tato9689/visor-claude-code-image-preview/issues/new?template=idea.yml).
 
 Icons: [Codicons](https://github.com/microsoft/vscode-codicons) by Microsoft, CC BY 4.0.
 
