@@ -1,7 +1,7 @@
 name: Idea
 description: Suggest something that would make Visor more useful
 title: "Idea: "
-labels: ["idea"]
+labels: ["enhancement"]
 body:
   - type: textarea
     id: what
