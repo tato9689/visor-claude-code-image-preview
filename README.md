@@ -2,6 +2,13 @@
 
 > Unofficial. Not affiliated with Anthropic.
 
+[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/tato9689.visor-for-claude-code?label=VS%20Code%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=tato9689.visor-for-claude-code)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/tato9689.visor-for-claude-code)](https://marketplace.visualstudio.com/items?itemName=tato9689.visor-for-claude-code)
+[![Open VSX](https://img.shields.io/open-vsx/v/tato9689/visor-for-claude-code?label=Open%20VSX)](https://open-vsx.org/extension/tato9689/visor-for-claude-code)
+[![License: MIT](https://img.shields.io/github/license/tato9689/visor-for-claude-code)](LICENSE)
+
+**Install:** `code --install-extension tato9689.visor-for-claude-code` · [Marketplace](https://marketplace.visualstudio.com/items?itemName=tato9689.visor-for-claude-code) · [Open VSX](https://open-vsx.org/extension/tato9689/visor-for-claude-code)
+
 See what Claude Code sees. **Image, SVG, HTML and video preview for Claude Code**: a side panel in VS Code (and Cursor, VSCodium, Windsurf) that shows, live, the files Claude Code reads or creates — including when Claude runs on a remote server over **Remote-SSH**.
 
 Today the official extension shows `[Image]` in the chat: Claude sees the picture, you don't. This fixes that.
