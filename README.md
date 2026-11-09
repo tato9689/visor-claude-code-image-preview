@@ -41,7 +41,7 @@ When Claude Code runs on a remote host over Remote-SSH, install it there (VS Cod
 
 ## Status
 
-Early version (0.2.x). Feedback and issues welcome. If Visor is useful to you, a rating on the [Marketplace](https://marketplace.visualstudio.com/items?itemName=tato9689.visor-for-claude-code&ssr=false#review-details) or [Open VSX](https://open-vsx.org/extension/tato9689/visor-for-claude-code/reviews) (or a star on GitHub) is the best way to help other people find it. After a week of real use the extension asks once; set `visor.askForReview` to `false` to turn that off.
+Early version (0.2.x). Feedback and issues welcome. If Visor is useful to you, a rating on the [Marketplace](https://marketplace.visualstudio.com/items?itemName=tato9689.visor-for-claude-code&ssr=false#review-details) or [Open VSX](https://open-vsx.org/extension/tato9689/visor-for-claude-code/reviews) (or a star on GitHub) is the best way to help other people find it. After a week of real use the extension asks once; set `visor.askForReview` to `false` to turn that off. Ideas for what Visor should do next: `…` menu in the panel → **Suggest an improvement**, or [open an idea on GitHub](https://github.com/tato9689/visor-for-claude-code/issues/new?template=idea.yml).
 
 Icons: [Codicons](https://github.com/microsoft/vscode-codicons) by Microsoft, CC BY 4.0.
 

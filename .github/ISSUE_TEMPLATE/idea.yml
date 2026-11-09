@@ -1,0 +1,24 @@
+name: Idea
+description: Suggest something that would make Visor more useful
+title: "Idea: "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What were you trying to do?
+      description: The task, in your own words. Spanish is fine too.
+    validations:
+      required: true
+  - type: textarea
+    id: missing
+    attributes:
+      label: What did you miss?
+      description: What Visor could do, or do differently, to help with that.
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Visor version, editor and OS
+      description: Filled in automatically when you come from the panel.

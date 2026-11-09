@@ -137,6 +137,6 @@ exports.run = async function () {
   await shot("html");
 
   const cmds = await vscode.commands.getCommands(true);
-  for (const c of ["visor.clear", "visor.togglePause", "visor.askChange"]) check(cmds.includes(c), "comando " + c);
+  for (const c of ["visor.clear", "visor.togglePause", "visor.askChange", "visor.suggest"]) check(cmds.includes(c), "comando " + c);
   console.log("E2E OK");
 };

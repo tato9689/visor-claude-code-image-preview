@@ -10,6 +10,7 @@ import { findSessions, projectsRoot, subagentFiles } from "./sessions";
 import { VersionStore } from "./versions";
 import { inlineLocalAssets } from "./htmlAssets";
 import { reviewUrl, shouldAskForReview } from "./review";
+import { suggestUrl } from "./feedback";
 
 const t = vscode.l10n.t;
 
@@ -28,6 +29,9 @@ export function activate(ctx: vscode.ExtensionContext) {
     }),
     vscode.commands.registerCommand("visor.clear", () => provider.clear()),
     vscode.commands.registerCommand("visor.togglePause", () => provider.togglePause()),
+    vscode.commands.registerCommand("visor.suggest", () =>
+      vscode.env.openExternal(vscode.Uri.parse(suggestUrl(String(ctx.extension.packageJSON.version), vscode.env.appName, process.platform))),
+    ),
     // Menú de clic derecho sobre una tarjeta: VS Code pasa el data-vscode-context de la tarjeta.
     vscode.commands.registerCommand("visor.askChange", (arg) => {
       const p = pathOf(arg);

@@ -3,6 +3,7 @@
   "command.togglePause.title": "Pause / Resume",
   "command.askChange.title": "Ask Claude for a change",
   "command.openFile.title": "Open file",
+  "command.suggest.title": "Suggest an improvement",
   "command.copyPath.title": "Copy path",
   "command._state.title": "Internal state (tests)",
   "command._ui.title": "Open viewer (tests)",
