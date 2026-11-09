@@ -2,8 +2,8 @@
 
 > Unofficial. Not affiliated with Anthropic.
 
-[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/tato9689.visor-for-claude-code?label=VS%20Code%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=tato9689.visor-for-claude-code)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/tato9689.visor-for-claude-code)](https://marketplace.visualstudio.com/items?itemName=tato9689.visor-for-claude-code)
+[![VS Code Marketplace](https://vsmarketplacebadges.dev/version-short/tato9689.visor-for-claude-code.svg)](https://marketplace.visualstudio.com/items?itemName=tato9689.visor-for-claude-code)
+[![Installs](https://vsmarketplacebadges.dev/installs-short/tato9689.visor-for-claude-code.svg)](https://marketplace.visualstudio.com/items?itemName=tato9689.visor-for-claude-code)
 [![Open VSX](https://img.shields.io/open-vsx/v/tato9689/visor-for-claude-code?label=Open%20VSX)](https://open-vsx.org/extension/tato9689/visor-for-claude-code)
 [![License: MIT](https://img.shields.io/github/license/tato9689/visor-for-claude-code)](LICENSE)
 
